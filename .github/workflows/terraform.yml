@@ -3,7 +3,8 @@ name: Terraform Apply
 on:
   push:
     branches:
-      - main  # Change this to your default branch
+      - main
+  workflow_dispatch:   # Add this line to enable manual triggers
 
 jobs:
   terraform:
